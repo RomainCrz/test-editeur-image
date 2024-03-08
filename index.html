@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Canvas de dessin</title>
+</head>
+<body>
+    <canvas id="c" width="670" height="900" style="border:1px solid #000;"></canvas>
+    <button
+        onclick="addSecondImage()"
+    >
+        Add second image
+    </button>
+    <button onclick="draw()">
+        Draw
+    </button>
+    <button onclick="deleteObject()">
+        Delete object
+    </button>
+    <button onclick="saveCanvas()">
+        Save canvas
+    </button>
+    <input type="file" id="file"/>
+    <img id="img" style="display: none" />
+    <a href="test rudy.jpg" download="test_rudy_dowloaded.jpg">Download</a>
+    <button onclick="downloadImage()">Download image</button>
+    <script src="fabric.min.js"></script>
+    <script src="testFabric.js"></script>
+    </body>
+</html>
