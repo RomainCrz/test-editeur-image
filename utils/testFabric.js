@@ -66,8 +66,6 @@ function deleteObject() {
 
 function getEvent(params){
     const event = params.e
-    console.log("params", params)
-    console.log("event", event)
     if (event.altKey === true) {
         canvas.isDragging = true
         canvas.selection = false
@@ -136,3 +134,35 @@ function downloadImage() {
     element.click()
     document.body.removeChild(element)
 }
+
+const rect = new fabric.Rect({
+    left: 100,
+    top: 100,
+    fill: "transparent",
+    width: 3000,
+    height: 1000,
+    angle: 0,
+    stroke: "blue",
+    strokeWidth: 3
+  });
+
+const carre = new fabric.Rect({
+    left: 100,
+    top: 100,
+    fill: 'black',
+    width: 1000,
+    height: 1000,
+    angle: 0
+  });
+
+const triangle = new fabric.Triangle({
+    width: 1000, height: 1000, fill: 'black', left: 50, top: 50
+  });
+
+const cercle = new fabric.Circle({
+    radius: 500, fill: 'black', left: 100, top: 100
+  });
+
+const ligne = new fabric.Line({
+  x1: 0 ,y1:0, x2: 100, y2 :100
+});
